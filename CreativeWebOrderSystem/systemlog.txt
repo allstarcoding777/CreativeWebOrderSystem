@@ -1,0 +1,6 @@
+Nov 30, 2025 10:52:14 AM CreativeWebOrderSystem main
+INFO: Application started.
+Nov 30, 2025 10:53:46 AM CreativeWebOrderSystem main
+INFO: Application started.
+Nov 30, 2025 10:54:00 AM CreativeWebOrderSystem main
+INFO: New order created with ID: 1
