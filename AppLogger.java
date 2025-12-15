@@ -1,38 +1,22 @@
 // AppLogger.java
-// Logging class for the CreativeWebOrderSystem
-
-import java.io.IOException;
-import java.util.logging.*;
+// Simple logging class
+import java.util.logging.Logger;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.SimpleFormatter;
 
 public class AppLogger {
-
-    private static Logger logger = Logger.getLogger("CreativeWebLogger");
+    private static Logger logger;
 
     public static Logger getLogger() {
+        if (logger == null) {
+            logger = Logger.getLogger("CreativeWebOrderSystem");
+            ConsoleHandler handler = new ConsoleHandler();
+            handler.setFormatter(new SimpleFormatter());
+            logger.addHandler(handler);
+            logger.setUseParentHandlers(false);
+        }
         return logger;
     }
-
-    static {
-        try {
-            // Create handler for writing logs to file
-            FileHandler fileHandler = new FileHandler("systemlog.txt", true);
-
-            // Custom formatter
-            SimpleFormatter formatter = new SimpleFormatter();
-            fileHandler.setFormatter(formatter);
-
-            // Add handler to logger
-            logger.addHandler(fileHandler);
-
-            // Log level
-            logger.setLevel(Level.INFO);
-
-            // Prevent duplicate console logs
-            logger.setUseParentHandlers(false);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
+
 

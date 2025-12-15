@@ -4,3 +4,11 @@ Nov 30, 2025 10:53:46 AM CreativeWebOrderSystem main
 INFO: Application started.
 Nov 30, 2025 10:54:00 AM CreativeWebOrderSystem main
 INFO: New order created with ID: 1
+Dec 07, 2025 7:27:19 PM CreativeWebOrderSystem main
+INFO: Application started.
+Dec 07, 2025 7:27:30 PM CreativeWebOrderSystem main
+INFO: New order created with ID: 1
+Dec 14, 2025 5:22:30 PM CreativeWebOrderSystem main
+INFO: Application started with database.
+Dec 14, 2025 5:33:51 PM CreativeWebOrderSystem main
+INFO: Order created for customer: Terry
